@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 
-.ant-dropdown {
+  .ant-dropdown {
   .ant-dropdown-menu {
     border-radius: 12px;
     border: 1px solid #303236 !important;
@@ -37,10 +37,8 @@ a {
   .ant-dropdown-menu-item:hover {
     color: unset !important;
     background-color: unset !important;
-
   }
 }
-
 
 
 .ant-dropdown-menu {
@@ -89,6 +87,3 @@ a {
   background: #0C0E12 !important;
 }
 
-.ant-checkbox-inner:hover{
-  border: unset !important;
-}
