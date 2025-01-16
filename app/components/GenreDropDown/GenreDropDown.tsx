@@ -1,7 +1,8 @@
+'use client'
 import React, { useState } from 'react';
 import { DownOutlined } from '@ant-design/icons';
 import { Dropdown, Space, Input, Checkbox, Menu } from 'antd';
-import styles from './Selector.module.scss';
+import styles from './GenreDropDown.module.scss';
 import Image from 'next/image';
 
 const options = ['Animation', 'Horror', 'Action', 'Comedy', 'Drama'];
