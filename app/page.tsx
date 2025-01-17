@@ -2,6 +2,7 @@ import { MovieCard } from './components/MovieCard/MovieCard';
 import styles from './page.module.css';
 import { moviesData } from './utils/constants';
 
+
 export default function Home() {
   return (
     <div className={styles.page}>

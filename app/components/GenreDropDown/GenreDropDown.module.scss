@@ -1,0 +1,23 @@
+.dropWrapper :global .ant-dropdown-trigger {
+    border-radius: 8px;
+    border: 1px solid #303236;
+    background: #0c0e12;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .dropWrapper :global .ant-space-item {
+    color: #eae9e9;
+    font-family: 'Clash Grotesk';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  
+  .dropWrapper :global .ant-dropdown-open {
+    border-radius: 8px;
+    border: 1px solid #303236;
+    background: #1d212b;
+  }
+  
