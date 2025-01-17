@@ -1,0 +1,48 @@
+.logo {
+  cursor: pointer;
+}
+
+.containerWrapper {
+  max-width: 497px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.navbarList ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.container {
+  max-width: 1248px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userImg {
+  border-radius: 8px;
+  border: 1px solid #303236;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  width: 44px;
+  padding: var(--spacing-lg, 12px) 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 1px 2px 0px
+    var(--Colors-Effects-Shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
