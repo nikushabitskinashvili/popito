@@ -6,7 +6,7 @@ interface TextProps {
 }
 
 interface TextListProps {
-  text: string[];
+  text: text[];
 }
 
 interface InputProps {
@@ -22,4 +22,9 @@ interface Props {
   active: boolean;
   pathname: string;
   title: string;
+}
+
+interface Text {
+  id: number;
+  text: string;
 }

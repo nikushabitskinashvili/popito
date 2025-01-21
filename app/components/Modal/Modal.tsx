@@ -25,7 +25,7 @@ export default function Modal({ isModalOpen, closeModal }: ModalProps) {
           </span>
 
           <div className={styles.x} onClick={closeModal}>
-            <Image src="/icons/x.svg" alt="Close" width={10} height={10} />
+            <Image src="/svg/close.svg" alt="Close" width={24} height={24} />
           </div>
         </div>
         <div className={styles.content}>
@@ -67,9 +67,9 @@ export default function Modal({ isModalOpen, closeModal }: ModalProps) {
                 <span>Lorem ipsum dolor sit.</span>
               </label>
             </div>
-            <div className={styles.nextButton}>
-              <span>Next</span>
-            </div>
+            <button className={styles.nextButton}>
+              Next
+            </button>
           </div>
         </div>
         <span className={styles.skip}>skip</span>

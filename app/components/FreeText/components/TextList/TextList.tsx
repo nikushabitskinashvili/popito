@@ -1,11 +1,11 @@
 import styles from './TextList.module.scss';
 import TextItem from '../TextItem/TextItem';
 
-const TextList: React.FC<TextListProps> = ({ text }) => {
+const TextList: React.FC<TextListProps & { onDelete: (index: number) => void }> = ({ text, onDelete }) => {
   return (
     <div className={styles.container}>
-      {text.map((text, index) => (
-        <TextItem key={index} text={text} />
+      {text.map((item, index) => (
+        <TextItem key={index} text={item} onDelete={() => onDelete(index)} />
       ))}
     </div>
   );

@@ -17,6 +17,11 @@ const FreeText = () => {
     }
   };
 
+  const handleDelete = (index: number) => {
+    const updatedText = text.filter((_, i) => i !== index);
+    setText(updatedText);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.containerWrapper}>
@@ -25,7 +30,7 @@ const FreeText = () => {
         <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
       </div>
 
-      {text.length > 0 && <TextList text={text} />}
+      {text.length > 0 && <TextList text={text} onDelete={handleDelete} />}
     </div>
   );
 };
