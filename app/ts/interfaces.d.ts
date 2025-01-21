@@ -22,3 +22,11 @@ interface ModalProps {
   isModalOpen: boolean;
   closeModal: () => void;
 }
+
+export interface ButtonProps {
+  name?: string;
+  title: string;
+  className?: string;
+  background?: boolean;
+  action: () => void;
+}

@@ -1,19 +1,168 @@
 .container {
-  background-color: #ff520b;
-  width: 203px;
+  background-color: #FF520B;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
-  border-radius: 8px;
   border: none;
-  color: #f9f9f9;
-  cursor: pointer;
+  color: #F9F9F9;
 
   &:hover {
-    background-color: #ff6e33;
+    background-color: #FF6E33;
   }
+
   &:active {
-    background-color: #ff8857;
+    background-color: #FF8857;
   }
+}
+
+
+.trailer {
+  width: 161px;
+  height: 58px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.delete {
+  width: 167px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 23px;
+}
+
+.cancel {
+  width: 165px;
+  height: 34px;
+  border-radius: 23px;
+  border: 1px solid #3E4146;
+  font-size: 14px;
+  background-color: inherit;
+  color: #ADADAD;
+
+  &:hover {
+    background-color: inherit;
+    border: 1px solid #838383;
+  }
+
+  &:active {
+    background-color: inherit;
+  }
+}
+
+.askMe {
+  width: 203px;
+  height: 56px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.newRec {
+  width: 257px;
+  height: 52px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.play {
+  width: 240px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+.done {
+  width: 342px;
+  height: 42px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.createList {
+  width: 342px;
+  height: 42px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.skip {
+  width: 48px;
+  height: 36px;
+  background-color: inherit;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: 400;
+  color: #BEC1C6;
+  &:hover{
+    background-color: inherit;
+    border: 1px solid #3E4146;
+  }
+}
+
+.submit {
+  width: 83px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: inherit;
+  border: 1px solid #3E4146;
+  font-size: 14px;
+  font-weight: 400;
+  color: #BEC1C6;
+
+  &:hover{
+    background-color: inherit;
+    border: 1px solid #838383;
+  }
+}
+
+.next {
+  width: 68px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: inherit;
+
+  &:hover{
+    background-color: #474747;
+  }
+
+  &:active{
+    background-color: #FF520B;
+  }
+}
+
+.letsCreateList {
+  width: 415px;
+  height: 84px;
+  border-radius: 12px;
+  gap: 16px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.largeDone {
+  width: 616px;
+  height: 56px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.smallPlay{
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
 }
