@@ -26,7 +26,7 @@ const FreeText = () => {
     <div className={styles.container}>
       <div className={styles.containerWrapper}>
         <FreeTextInput onAddText={AddText} />
-        <Button openModal={openModal} />
+        <Button action={openModal} />
         <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
       </div>
 
