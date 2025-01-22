@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import styles from './modal.module.scss';
 import Image from 'next/image';
+import { ModalProps } from '@/app/ts/interfaces';
 
 export default function Modal({ isModalOpen, closeModal }: ModalProps) {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
