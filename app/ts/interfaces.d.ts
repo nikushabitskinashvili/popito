@@ -29,6 +29,11 @@ export interface ModalProps {
   h2?: string;
 }
 
+export interface someModalProps {
+  isModalOpen: boolean;
+  closeModal: () => void;
+}
+
 export interface XButtonProps {
   onClick?: () => void;
   size?: "small" | "large";
