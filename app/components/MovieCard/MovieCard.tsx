@@ -5,7 +5,6 @@ import img2 from '@/public/svg/Group.svg';
 import img3 from '@/public/svg/Interface, Essential.svg';
 import img4 from '@/public/svg/Path.svg';
 import { MovieCardProps } from '@/app/ts/interfaces';
-
 export const MovieCard = (props: MovieCardProps) => {
   console.log(props.id);
   return (
@@ -31,7 +30,7 @@ export const MovieCard = (props: MovieCardProps) => {
           <h4 className={styles.movieTitle}>{props.title}</h4>
           <p className={styles.ganres}>
             {props.year}{' '}
-            {props.ganres.map((ganre, index ) => (
+            {props.ganres.map((ganre, index) => (
               <span key={index}>
                 {ganre.title}
                 {index < props.ganres.length - 1 && ', '}

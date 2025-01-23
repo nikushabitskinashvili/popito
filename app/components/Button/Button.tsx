@@ -2,11 +2,8 @@
 
 import React from 'react';
 import styles from './Button.module.scss';
-import Image from "next/image";
 import { ButtonProps } from '@/app/ts/interfaces';
-
-// import {IconEnum} from "@/app/utils/icons";
-
+import Image from "next/image";
 
 export default function Button(props: ButtonProps) {
   const handleButtonClick = () => {
