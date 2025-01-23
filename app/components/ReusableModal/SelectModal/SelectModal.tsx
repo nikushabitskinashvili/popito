@@ -1,8 +1,9 @@
 import { SelectModalProps } from '@/app/ts/interfaces';
 import ReusableModal from '@/app/components/ReusableModal/ReusableModal';
 import Inputs from '@/app/components/Inputs/Inputs';
-import Button from '@/app/components/Button/Button';
+
 import styles from './SelectModal.module.scss';
+import Button from '../../Button/Button';
 
 export default function SelectModal(props: SelectModalProps) {
   return (

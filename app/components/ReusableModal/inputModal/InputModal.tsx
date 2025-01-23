@@ -2,8 +2,8 @@ import React from 'react';
 import ReusableModal from '@/app/components/ReusableModal/ReusableModal';
 import { InputModalProps } from '@/app/ts/interfaces';
 import Inputs from '@/app/components/Inputs/Inputs';
-import Button from '@/app/components/Button/Button';
 import styles from './InputModal.module.scss'
+import Button from '../../Button/Button';
 
 
 const InputModal = (props: InputModalProps ) => {

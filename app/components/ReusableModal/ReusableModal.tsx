@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import { ModalProps } from '@/app/ts/interfaces';
 // import Image from 'next/image';
 import styles from './ReusableModal.module.scss';
-import XButton from '@/app/components/Button/XButton/XButton';
+import XButton from '../Button/XButton/XButton';
+
 
 const Modal = (props: ModalProps) => {
   if (!props.isOpen) return null;

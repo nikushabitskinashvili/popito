@@ -1,7 +1,7 @@
 import styles from './ConfirmModal.module.scss';
 import { ConfirmModalProps } from '@/app/ts/interfaces';
 import ReusableModal from '@/app/components/ReusableModal/ReusableModal';
-import Button from '@/app/components/Button/Button';
+import Button from '../../Button/Button';
 
 export default function ConfirmModal(props: ConfirmModalProps) {
   return (
