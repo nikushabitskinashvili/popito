@@ -4,9 +4,8 @@ import img1 from '@/public/svg/Geometric, Abstract.svg';
 import img2 from '@/public/svg/Group.svg';
 import img3 from '@/public/svg/Interface, Essential.svg';
 import img4 from '@/public/svg/Path.svg';
-import { Movies } from '@/app/ts/interfaces';
-
-export const MovieCard = (props: Movies) => {
+import { MovieCardProps } from '@/app/ts/interfaces';
+export const MovieCard = (props: MovieCardProps) => {
   console.log(props.id);
   return (
     <div className={styles.container}>

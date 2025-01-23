@@ -2,11 +2,8 @@
 
 import React from 'react';
 import styles from './Button.module.scss';
-
-import Image from "next/image";
 import { ButtonProps } from '@/app/ts/interfaces';
-// import {IconEnum} from "@/app/utils/icons";
-
+import Image from "next/image";
 
 export default function Button(props: ButtonProps) {
   const handleButtonClick = () => {
@@ -34,10 +31,10 @@ export default function Button(props: ButtonProps) {
 
   return (
     <button className={classes.join(" ")} onClick={handleButtonClick}>
-      {props.title === 'smallPlay' && <Image src={'icons/play.svg'} alt={'play'} width={12} height={12}/>}
-      {props.title === 'letsCreateList' && <Image src={'icons/letsCreateList.svg'} alt={'plus'} width={40} height={40}/>}
+      {props.title === 'smallPlay' && <Image src={'svg/play.svg'} alt={'play'} width={12} height={12}/>}
+      {props.title === 'letsCreateList' && <Image src={'svg/letsCreateList.svg'} alt={'plus'} width={40} height={40}/>}
       {props.name}
-      {props.title === 'play' && <Image src={'icons/play.svg'} alt={'play'} width={16} height={16}/>}
+      {props.title === 'play' && <Image src={'svg/play.svg'} alt={'play'} width={16} height={16}/>}
     </button>
   );
 }
