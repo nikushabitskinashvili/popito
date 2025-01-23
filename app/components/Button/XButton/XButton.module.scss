@@ -1,0 +1,23 @@
+.small {
+  background: inherit;
+  width: 24px;
+  height: 24px;
+  border:none;
+  cursor: pointer;
+
+  :hover {
+    background: #0C0E12;
+  }
+}
+
+.large {
+  background: inherit;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+
+  :hover {
+    background: #0C0E12;
+  }
+}

@@ -4,25 +4,18 @@ import img1 from '@/public/svg/Geometric, Abstract.svg';
 import img2 from '@/public/svg/Group.svg';
 import img3 from '@/public/svg/Interface, Essential.svg';
 import img4 from '@/public/svg/Path.svg';
+import { MovieCardProps } from '@/app/ts/interfaces';
 
-export const MovieCard = ({
-  id,
-  title,
-  year,
-  ganres,
-  movieImg,
-  rating,
-  duration,
-}: MovieCard) => {
-  console.log(id);
+export const MovieCard = (props: MovieCardProps) => {
+  console.log(props.id);
   return (
     <div className={styles.container}>
       <div className={styles.imageWrapper}>
         <Image
-          src={movieImg}
+          src={props.movieImg}
           width={272}
           height={403}
-          alt={title}
+          alt={props.title}
           className={styles.image}
         />
       </div>
@@ -35,19 +28,19 @@ export const MovieCard = ({
           </div>
         </div>
         <div className={styles.textContainer}>
-          <h4 className={styles.movieTitle}>{title}</h4>
+          <h4 className={styles.movieTitle}>{props.title}</h4>
           <p className={styles.ganres}>
-            {year}{' '}
-            {ganres.map((ganre, index) => (
+            {props.year}{' '}
+            {props.ganres.map((ganre, index ) => (
               <span key={index}>
                 {ganre.title}
-                {index < ganres.length - 1 && ', '}
+                {index < props.ganres.length - 1 && ', '}
               </span>
             ))}
           </p>
           <p className={styles.imdbInfo}>
-            IMDB {rating}
-            <span>{duration} min</span>
+            IMDB {props.rating}
+            <span>{props.duration} min</span>
           </p>
           <button className={styles.button}>
             <Image src={img4} alt="heart-icon" />

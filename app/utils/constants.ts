@@ -1,4 +1,6 @@
-export const moviesData:MovieCard[] = [
+import { MovieCardProps } from '@/app/ts/interfaces';
+
+export const moviesData:MovieCardProps[] = [
     {
         id:1,
         title:"The Iron Giant",

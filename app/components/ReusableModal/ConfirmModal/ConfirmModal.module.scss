@@ -1,0 +1,17 @@
+.secondaryText{
+  color: #9F9F9F;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}

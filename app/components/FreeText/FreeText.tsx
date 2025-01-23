@@ -3,13 +3,12 @@ import { useState } from 'react';
 import styles from './FreeText.module.scss';
 import TextList from './components/TextList/TextList';
 import FreeTextInput from './components/FreeTextInput/FreeTextInput';
-import Button from '../Button/Button';
-import { useModal } from '@/app/hooks/useModal';
-import Modal from '../Modal/Modal';
+// import { useModal } from '@/app/hooks/useModal';
+// import Button from '../Button/Button';
 
 const FreeText = () => {
   const [text, setText] = useState<string[]>([]);
-  const { isModalOpen, openModal, closeModal } = useModal();
+  // const { isModalOpen, openModal, closeModal } = useModal();
 
   const AddText = (newText: string) => {
     if (newText.trim()) {
@@ -26,8 +25,6 @@ const FreeText = () => {
     <div className={styles.container}>
       <div className={styles.containerWrapper}>
         <FreeTextInput onAddText={AddText} />
-        <Button openModal={openModal} />
-        <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
       </div>
 
       {text.length > 0 && <TextList text={text} onDelete={handleDelete} />}
