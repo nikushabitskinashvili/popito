@@ -1,44 +1,42 @@
-.container{
-  background: #0C0E12;
+.container {
+  background: #0c0e12;
   border-radius: 8px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
-  padding: 10px 14px;
 }
 
-.small{
-  width: 318px;
-  height: 44px;
+.small {
+  max-width: 318px;
+  width: 100%;
 }
 
-.medium{
-  width: 616px;
-  height: 44px;
+.medium {
+  max-width: 616px;
+  width: 100%;
 }
 
-.large{
-  width: 849px;
-  height: 58px;
-  padding: 12px 20px;
+.large {
+  max-width: 817px;
+  width: 100%;
 }
 
-.listName{
+.listName {
   width: 342px;
   height: 38px;
   padding: 8px 16px;
   background: #000;
-  border: 1px solid #3E4146;
+  border: 1px solid #3e4146;
 }
 
-.input{
+.input {
   width: 100%;
   background: inherit;
   caret-color: #fff;
   color: #fff;
   outline: none;
-  ::placeholder{
+  ::placeholder {
     font-size: 16px;
     font-weight: 400;
   }
