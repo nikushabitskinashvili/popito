@@ -50,6 +50,8 @@ export interface InputProps {
   size?: 'small' | 'medium' | 'large' | undefined;
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  className?: string;
+
 }
 
 export interface SelectModalProps {

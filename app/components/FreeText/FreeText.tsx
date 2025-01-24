@@ -24,7 +24,7 @@ const FreeText = () => {
     <div className={styles.container}>
       <div className={styles.containerWrapper}>
         <FreeTextInput onAddText={AddText} />
-        <Button action={openModal} />
+        <Button action={openModal} title="askMe" name="Ask Me Anything" />
         <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
       </div>
 

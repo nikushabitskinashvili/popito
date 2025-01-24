@@ -4,9 +4,12 @@ import React from 'react';
 import styles from './answer.module.scss';
 import { AnswerProps } from '@/app/ts/interfaces';
 
-
-
-export default function Answer({ value, label, selectedAnswer, onChange }: AnswerProps) {
+export default function Answer({
+  value,
+  label,
+  selectedAnswer,
+  onChange,
+}: AnswerProps) {
   return (
     <label className={styles.label}>
       <input
