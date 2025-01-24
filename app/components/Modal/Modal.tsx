@@ -4,19 +4,23 @@ import React, { useState } from 'react';
 import styles from './modal.module.scss';
 import Image from 'next/image';
 import { someModalProps } from '@/app/ts/interfaces';
+import Answer from '../Answer/answer';
 
 export default function Modal({ isModalOpen, closeModal }: someModalProps) {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
 
   if (!isModalOpen) return null;
 
-  const handleRadioChange = (value: string) => {
-    setSelectedAnswer((prev) => (prev === value ? null : value));
-  };
-
   const handleContainerClick = (event: React.MouseEvent<HTMLDivElement>) => {
     event.stopPropagation();
   };
+
+  const answers = [
+    { value: 'option1', label: 'Lorem ipsum dolor sit.' },
+    { value: 'option2', label: 'Lorem ipsum dolor sit.' },
+    { value: 'option3', label: 'Lorem ipsum dolor sit.' },
+    { value: 'option4', label: 'Lorem ipsum dolor sit.' },
+  ];
 
   return (
     <div className={styles.wrapper} onClick={closeModal}>
@@ -33,38 +37,15 @@ export default function Modal({ isModalOpen, closeModal }: someModalProps) {
           </span>
           <div className={styles.innerWrapper}>
             <div className={styles.answers}>
-              <label className={styles.label}>
-                <input
-                  type="radio"
-                  checked={selectedAnswer === 'option1'}
-                  onChange={() => handleRadioChange('option1')}
+              {answers.map((answer) => (
+                <Answer
+                  key={answer.value}
+                  value={answer.value}
+                  label={answer.label}
+                  selectedAnswer={selectedAnswer}
+                  onChange={(value) => setSelectedAnswer(value)}
                 />
-                <span>Lorem ipsum dolor sit.</span>
-              </label>
-              <label className={styles.label}>
-                <input
-                  type="radio"
-                  checked={selectedAnswer === 'option2'}
-                  onChange={() => handleRadioChange('option2')}
-                />
-                <span>Lorem ipsum dolor sit.</span>
-              </label>
-              <label className={styles.label}>
-                <input
-                  type="radio"
-                  checked={selectedAnswer === 'option3'}
-                  onChange={() => handleRadioChange('option3')}
-                />
-                <span>Lorem ipsum dolor sit.</span>
-              </label>
-              <label className={styles.label}>
-                <input
-                  type="radio"
-                  checked={selectedAnswer === 'option4'}
-                  onChange={() => handleRadioChange('option4')}
-                />
-                <span>Lorem ipsum dolor sit.</span>
-              </label>
+              ))}
             </div>
             <div className={styles.nextButton}>
               <span>Next</span>
