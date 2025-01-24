@@ -81,3 +81,10 @@ export interface Movies {
   rating:number;
   duration:number;
 }
+
+export interface AnswerProps {
+  value: string;
+  label: string;
+  selectedAnswer: string | null;
+  onChange: (value: string) => void;
+}
