@@ -2,11 +2,12 @@
 
 import React, { useState } from 'react';
 import styles from './modal.module.scss';
-import Image from 'next/image';
-import { someModalProps } from '@/app/ts/interfaces';
+import { askModalProps } from '@/app/ts/interfaces';
 import Answer from '../Answer/answer';
+import Button from '../Button/Button';
+import XButton from '../Button/XButton/XButton';
 
-export default function Modal({ isModalOpen, closeModal }: someModalProps) {
+export default function Modal({ isModalOpen, closeModal }: askModalProps) {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
 
   if (!isModalOpen) return null;
@@ -27,9 +28,7 @@ export default function Modal({ isModalOpen, closeModal }: someModalProps) {
       <div className={styles.container} onClick={handleContainerClick}>
         <div className={styles.header}>
           <span className={styles.heading}>Lets choose a movie together for today</span>
-          <div className={styles.x} onClick={closeModal}>
-            <Image src="/icons/x.svg" alt="Close" width={10} height={10} />
-          </div>
+          <XButton onClick={closeModal}/>
         </div>
         <div className={styles.content}>
           <span className={styles.question}>
@@ -47,12 +46,11 @@ export default function Modal({ isModalOpen, closeModal }: someModalProps) {
                 />
               ))}
             </div>
-            <div className={styles.nextButton}>
-              <span>Next</span>
-            </div>
+
+            <Button title='next' action={closeModal} name='next' />
           </div>
         </div>
-        <span className={styles.skip}>skip</span>
+        <Button title='skip' action={closeModal} name='skip'/>
       </div>
     </div>
   );

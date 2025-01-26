@@ -29,7 +29,7 @@ export interface ModalProps {
   h2?: string;
 }
 
-export interface someModalProps {
+export interface askModalProps {
   isModalOpen: boolean;
   closeModal: () => void;
 }
