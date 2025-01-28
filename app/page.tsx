@@ -1,8 +1,11 @@
 'use client';
 import styles from './page.module.css';
+// import ReusableModal from '@/app/components/ReusableModal/ReusableModal';
 import Button from '@/app/components/Button/Button';
 import React, { useState } from 'react';
+// import InputModal from '@/app/components/ReusableModal/inputModal/InputModal';
 import Inputs from '@/app/components/Inputs/Inputs';
+// import SelectModal from '@/app/components/ReusableModal/SelectModal/SelectModal';
 import ConfirmModal from '@/app/components/ReusableModal/ConfirmModal/ConfirmModal';
 
 export default function Home() {
@@ -26,8 +29,4 @@ export default function Home() {
       </div>
     </div>
   );
-
-
-export default function Home() {
-  return <div className={styles.page}></div>;
 }
