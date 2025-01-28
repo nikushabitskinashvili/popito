@@ -29,6 +29,11 @@ export interface ModalProps {
   h2?: string;
 }
 
+export interface askModalProps {
+  isModalOpen: boolean;
+  closeModal: () => void;
+}
+
 export interface XButtonProps {
   onClick?: () => void;
   size?: "small" | "large";
@@ -45,6 +50,8 @@ export interface InputProps {
   size?: 'small' | 'medium' | 'large' | undefined;
   value?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  className?: string;
+
 }
 
 export interface SelectModalProps {
@@ -75,4 +82,11 @@ export interface Movies {
   movieImg:string;
   rating:number;
   duration:number;
+}
+
+export interface AnswerProps {
+  value: string;
+  label: string;
+  selectedAnswer: string | null;
+  onChange: (value: string) => void;
 }

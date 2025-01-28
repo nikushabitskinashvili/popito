@@ -3,7 +3,9 @@ import { useState } from 'react';
 import styles from './FreeText.module.scss';
 import TextList from './components/TextList/TextList';
 import FreeTextInput from './components/FreeTextInput/FreeTextInput';
-
+import Modal from '../Modal/Modal';
+import Button from '../Button/Button';
+import { useModal } from '@/app/hooks/useModal';
 const FreeText = () => {
   const [text, setText] = useState<string[]>([]);
 
@@ -17,12 +19,12 @@ const FreeText = () => {
     const updatedText = text.filter((_, i) => i !== index);
     setText(updatedText);
   };
-
+  const { isModalOpen, openModal, closeModal } = useModal();
   return (
     <div className={styles.container}>
       <div className={styles.containerWrapper}>
         <FreeTextInput onAddText={AddText} />
-        <Button action={openModal} />
+        <Button action={openModal} title="askMe" name="Ask Me Anything" />
         <Modal isModalOpen={isModalOpen} closeModal={closeModal} />
       </div>
 
