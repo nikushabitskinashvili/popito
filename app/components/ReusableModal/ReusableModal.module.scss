@@ -23,8 +23,8 @@
    height: 204px;
    gap: 24px;
    background:
-           radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 50%, #000 100%),black
-           url('/svg/circles.svg') no-repeat top left;
+           //radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 50%, #000 100%),
+            black url('/svg/circle.svg') no-repeat top left;
  }
 
 .header{
